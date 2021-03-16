@@ -13,11 +13,14 @@ The code provided in this repository can be used to perform the following tasks:
 •	Perform some process mining tasks (like)
 
 The scripts train a Long Short Term Memory (LSTM)-based predictive model using historical data (i.e. completed process instances). The models are evaluated on test datasets.
-Requirements: 
+
+Requirements:
+
 Python 3. Additionally, the following Python libraries are required to run the code: Keras (as a backend, TensorFlow, or Theano is needed), unicodecsv, numpy, sklearn, matplotlib, pydot, graphviz, h5py. (Latest versions might be mandatory).
 
 USAGE: 
 Data format
+
 The tool assumes the input is a complete log of all traces in the CSV format which has a case ID column, and an event column containing activity names or ID. The input log is in some cases split into 70% (training set) and 30% (test set). Sample datasets used in the paper are provided in the data folder.
 Model training and Evaluation: 
 
