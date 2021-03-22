@@ -1,4 +1,4 @@
-# LSTM_Approach_To_ProcessMining
+
 
 Following is the supplementary material for the article “A Graph-Based Approach to Interpreting Recurrent Neural Networks in Process Mining” by K. M. Hanga, Y. Kovalchuk, and M. M. Gaber.
 The code provided in this repository can be used to perform the following tasks:
