@@ -2,6 +2,7 @@
 
 Following is the supplementary material for the article “A Graph-Based Approach to Interpreting Recurrent Neural Networks in Process Mining” by K. M. Hanga, Y. Kovalchuk, and M. M. Gaber.
 The code provided in this repository can be used to perform the following tasks:
+
 •	Prediction of the next activity to be executed in a process instance.
 
 •	Prediction of the continuation of a process instance (i.e. its suffix).
@@ -10,7 +11,7 @@ The code provided in this repository can be used to perform the following tasks:
 
 •	Computing the similarity between the graphs to validate the generalising ability of the model.
 
-•	Perform some process mining tasks (like)
+•	Perform some process mining tasks.
 
 The scripts train a Long Short Term Memory (LSTM)-based predictive model using historical data (i.e. completed process instances). The models are evaluated on test datasets.
 
@@ -22,6 +23,7 @@ USAGE:
 Data format
 
 The tool assumes the input is a complete log of all traces in the CSV format which has a case ID column, and an event column containing activity names or ID. The input log is in some cases split into 70% (training set) and 30% (test set). Sample datasets used in the paper are provided in the data folder.
+
 Model training and Evaluation: 
 
 This script trains a one-layer LSTM model with an embedding layer on one of the data files in the data folder of this repository (the helpdesk event log is the default). To change the input file to another one from the data folder, remember to indicate its name in the script. It is best to run the scripts on GPU (especially when using big logs), as recurrent networks are quite computationally intensive. The script uses the trained LSTM model and predicts the next event for a trace. It also predicts the continuation of a trace, i.e. its suffix, until its completion. It evaluates the performance of the next event prediction, and returns the average accuracy and loss.
