@@ -1,0 +1,1 @@
+When using this resource, please cite: K. M. Hanga, Y. Kovalchuk and M. M. Gaber, "A Graph-Based Approach to Interpreting Recurrent Neural Networks in Process Mining," in IEEE Access, vol. 8, pp. 172923-172938, 2020, doi: 10.1109/ACCESS.2020.3025999."
